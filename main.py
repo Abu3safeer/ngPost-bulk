@@ -4,8 +4,8 @@ import subprocess
 # Windows Command for reference
 # "ngPostv4.16.1_x64\ngPost.exe" -i "files\%%~nxf" -o "nzb\%%~nxf.nzb" -c "ngPostv4.16.1_x64\ngPost.conf" --gen_par2
 
-DELETE = False  # Delete files after complete
-main_path = Path('C:/Users/Abu3safeerPC/Documents/apps/ngPost')
+DELETE = True  # Delete files after complete
+main_path = Path()
 files_path = main_path / 'files'
 nzb_path = main_path / 'nzb'
 ngPost_exe = main_path / 'ngPostv4.16.1_x64/ngPost.exe'
@@ -79,5 +79,5 @@ def run():
 if __name__ == '__main__':
 
     run()
-    input('Press any key to exit....')
+    input('Press Enter to exit....')
 
